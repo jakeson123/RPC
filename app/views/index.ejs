@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' href='/rutasColombia/usuario/menuSuperior/img/logo-min.ico' type='image/x-icon'>
+  <link rel="stylesheet" href="rutasColombia\usuario\mapa\css\mapa.css">
+  <link rel="stylesheet" href="rutasColombia\usuario\mapa\css\info.css">
+  <link rel="stylesheet" href="rutasColombia\usuario\menuSuperior\css\menuSuperior.css">
+  <link rel="stylesheet" href="rutasColombia\usuario\menuSuperior/css/iconos.css">
+  <link rel="stylesheet" href="rutasColombia\usuario\menuLateral\css\menuLateral.css">
+  <link rel="stylesheet" href="rutasColombia\administrador/conteAdministrador/css/conteAdministrador.css">
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="lib/bootstrap/bootstrap1.min.css">-->
+  <title>
+    <%= titulo %>
+  </title>
+</head>
+
+<body ng-controller="rutasColombiaCtrl">
+  <!--incluir las views definidas por el config-->
+  <section ui-view='menuView'></section>
+  <section ui-view></section>
+  <section ui-view='menuLateralView'></section>
+
+  <!--Cookies-->
+  <script type="text/JavaScript" src="lib/cookies.js"></script>
+
+  <!--Angular-->
+  <script type="text/JavaScript" src="lib/angular/angular.js"></script>
+  <script type="text/JavaScript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/JavaScript" src="lib/angular-resource/angular-resource.js"></script>
+  <script type="text/JavaScript" src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+  <script type="text/JavaScript" src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+  <!--rutasColombia-->
+  <script type="text/JavaScript" src="rutasColombia/rutasColombia.cliente.router.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/rutasColombia.cliente.controlador.js"></script>
+
+  <!--Home-->
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/menuSuperior.cliente.modulo.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/configuracion/menuSuperior.cliente.router.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/servicios/usuarios.cliente.servicio.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/controladores/menuSuperior.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/controladores/menuSuperiorIng.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario/menuSuperior/controladores/menuSuperiorR.cliente.controlador.js"></script>
+
+  <!--Mapa-->
+  <script type="text/JavaScript" src="rutasColombia\usuario\/mapa/mapa.cliente.modulo.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario\/mapa/configuracion/mapa.cliente.router.js"></script>
+  <script type="text/JavaScript" src="rutasColombia\usuario\mapa/controladores/mapa.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+  <!--admin-->
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/administrador.cliente.modulo.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/configuracion/conteAdministrador.cliente.router.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/controladores/conteAdministradorImg.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/controladores/conteAdministradorUsu.cliente.controlador.js"></script>
+
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/servicios/usuarios.cliente.servicio.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/administrador/conteAdministrador/servicios/imagenes.cliente.servicio.js"></script>
+
+  <!--Menu-->
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/menuLateral.cliente.modulo.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/configuracion/menuLateral.cliente.router.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/servicios/menuLateral.cliente.servicio.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/controladores/menuLateral.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/controladores/menuLateralSubir.cliente.controlador.js"></script>
+  <script type="text/JavaScript" src="rutasColombia/usuario/menuLateral/directivas/menuLateral.cliente.directiva.js"></script>
+
+  <!--Frameworks-->
+  <script type="text/JavaScript" src="lib/jquery/dist/jquery.min.js"></script>
+  <!--Error de compatibilidad entre categorias y ventanas emergentes-->
+  <script type="text/JavaScript" src="lib/bootstrap/bootstrap.min.js"></script>
+
+  <!--Mapa-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdnehWDlJFYTKupW_oLDYRdsTGGaUSo-g&libraries=places" async defer></script>
+
+  <script type="text/JavaScript" src="application.js"></script>
+
+</body>
+
+</html>
